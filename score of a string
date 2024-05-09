@@ -1,0 +1,3 @@
+class Solution:
+    def scoreOfString(self, s: str) -> int:
+        return sum(abs(n1-n2)for n1, n2 in pairwise(map(ord,s)))
